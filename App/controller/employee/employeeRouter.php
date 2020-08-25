@@ -1,7 +1,7 @@
 <?php
-	require_once('model/Employee.php');
-	require_once('model/EmployeeManager.php');
-	require_once('../connection/connection.php');
+	require_once('../../model/employee/Employee.php');
+	require_once('../../model/employee/EmployeeManager.php');
+	require_once('../../model/connection/connection.php');
 
 	global $conn;
 	$type =  $_POST['type'];

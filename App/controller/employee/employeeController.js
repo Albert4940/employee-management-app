@@ -9,7 +9,7 @@
 function get_record(){
 	$.ajax({
 		data: {type:'5'},
-		url : "http://localhost/jquery/employee-management-app/App/employee/employeeRouter.php",
+		url : "http://localhost/jquery/employee-management-app/App/controller/employee/employeeRouter.php",
 		method: 'post',
 		success: function(response)
 		{
@@ -44,7 +44,7 @@ function tr_factory(data, index){
 function view_record(){
 	$.ajax({
 		data: {type:'4'},
-		url : "http://localhost/jquery/employee-management-app/App/employee/employeeRouter.php",
+		url : "http://localhost/jquery/employee-management-app/App/controller/employee/employeeRouter.php",
 		method: 'post',
 		success: function(response)
 		{
@@ -68,7 +68,7 @@ function insert_record(){
 		$.ajax({
 			data: data,
 			type: "post",
-			url: "http://localhost/jquery/employee-management-app/App/employee/employeeRouter.php",
+			url: "http://localhost/jquery/employee-management-app/App/controller/employee/employeeRouter.php",
 			success: function(dataResult){
 					//var dataResult = JSON.parse();
 					//console.log(dataResult);
@@ -104,7 +104,7 @@ function insert_record(){
 			$.ajax({
 				data:data,
 				type:"post",
-				url:"http://localhost/jquery/employee-management-app/App/employee/employeeRouter.php",
+				url:"http://localhost/jquery/employee-management-app/App/controller/employee/employeeRouter.php",
 				success: function(dataResult){
 					//var dataResult = $.parseJSON(dataResult);
 					if(dataResult == 'success'){
@@ -129,7 +129,7 @@ function insert_record(){
 
 		$(document).on("click", "#delete", function() { 
 		$.ajax({
-			url: "http://localhost/jquery/employee-management-app/App/employee/employeeRouter.php",
+			url: "http://localhost/jquery/employee-management-app/App/controller/employee/employeeRouter.php",
 			type: "POST",
 			cache: false,
 			data:{

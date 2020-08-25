@@ -13,7 +13,7 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="../controller/employeeController.js"></script>
+  <script src="../controller/employee/employeeController.js"></script>
 </head>
 <body>
     <div class="container">
@@ -22,10 +22,10 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-            <h2>Manage <b>Users</b></h2>
+            <h2>Manage <b>Employee</b></h2>
           </div>
           <div class="col-sm-6">
-            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New User</span></a>
+            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Add New Employee</span></a>
             <!-- <a href="JavaScript:void(0);" class="btn btn-danger" id="delete_multiple"><i class="material-icons"></i> <span>Delete</span></a>            -->
           </div>
                 </div>
